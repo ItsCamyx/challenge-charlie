@@ -1,7 +1,8 @@
 import BingAPI from "../../services/WallpapperBing";
-import { Container, Content } from "./styled";
+import { Container } from "./styled";
 import { useState, useEffect } from "react";
-
+import { Header } from "../../components/Header/Header";
+import { Middle } from "../../components/Middle/Middle";
 export const Home = () => {
   const [wallpaper, setWallpaper] = useState("");
   BingAPI.get().then((response) => {
@@ -9,9 +10,8 @@ export const Home = () => {
   });
   return (
     <Container bgImage={wallpaper}>
-      <Content color="yellow">
-        <h1>Teste</h1>
-      </Content>
+      <Header />
+      <Middle />
     </Container>
   );
 };
