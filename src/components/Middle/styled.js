@@ -3,7 +3,7 @@ import * as Color from "color";
 
 export const Content = styled.div`
   display: flex;
-  width: 97%;
+  width: 100%;
   min-height: 600px;
   align-items: center;
   justify-content: space-around;
