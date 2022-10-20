@@ -15,7 +15,7 @@ export const SearchContainer = styled.div`
   justify-content: center;
   margin-top: 24px;
 `;
-export const DivIcon = styled.div`
+export const DivIcon = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;

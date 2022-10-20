@@ -23,7 +23,7 @@ export const Middle = () => {
         </div>
       </TitleContainer>
 
-      <ContainerWeatherData color="#F0C000" colorHover="#705E00">
+      <ContainerWeatherData color="#F0C000">
         <ContentImgLeft>
           <img src={Weather} alt=""></img>
         </ContentImgLeft>
@@ -43,12 +43,12 @@ export const Middle = () => {
         </ContentDetailsRight>
       </ContainerWeatherData>
 
-      <TomorrowContainer color="#F0C000" colorHover="#705E00">
+      <TomorrowContainer color="#F0C000">
         <p>Amanhã</p>
         <p>32º</p>
       </TomorrowContainer>
 
-      <NextDaysContainer color="#F0C000" colorHover="#705E00">
+      <NextDaysContainer color="#F0C000">
         <p>Depois de Amanhã</p>
         <p>30º</p>
       </NextDaysContainer>

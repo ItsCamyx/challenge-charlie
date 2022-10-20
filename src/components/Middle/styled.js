@@ -45,11 +45,11 @@ export const ContainerWeatherData = styled.div`
   flex-direction: column;
   width: 100%;
   align-items: center;
-  transition: 1s;
-  background-color: ${(props) => Color(props.color)};
+  border-radius: 14px;
+  background-color: ${(props) => Color(props.color).alpha(0.75)};
   transition: 1s;
   &:hover {
-    background-color: ${(props) => Color(props.colorHover)};
+    background-color: ${(props) => Color(props.color).darken(0.6)};
   }
   @media (min-width: 600px) {
     flex-direction: row;
@@ -84,11 +84,12 @@ export const TomorrowContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   flex-direction: column;
-  background-color: ${(props) => Color(props.color)};
+  background-color: ${(props) => Color(props.color).alpha(0.7)};
   align-items: center;
   transition: 1s;
+  border-radius: 14px;
   &:hover {
-    background-color: ${(props) => Color(props.colorHover)};
+    background-color: ${(props) => Color(props.color).darken(0.6)};
   }
 `;
 export const NextDaysContainer = styled.div`
@@ -97,9 +98,10 @@ export const NextDaysContainer = styled.div`
   width: 100%;
   flex-direction: column;
   align-items: center;
-  background-color: ${(props) => Color(props.color)};
+  background-color: ${(props) => Color(props.color).alpha(1)};
   transition: 1s;
+  border-radius: 14px;
   &:hover {
-    background-color: ${(props) => Color(props.colorHover)};
+    background-color: ${(props) => Color(props.color).darken(0.6)};
   }
 `;

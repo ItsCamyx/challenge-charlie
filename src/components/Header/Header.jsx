@@ -5,12 +5,12 @@ export const Header = () => {
     <Container>
       <h1>ClimaWeb</h1>
       <SearchContainer>
-        <DivIcon>
-          <SearchIcon />
-        </DivIcon>
         <div>
           <InputText type="text" placeholder="Digite aqui sua cidade" />
         </div>
+        <DivIcon>
+          <SearchIcon />
+        </DivIcon>
       </SearchContainer>
     </Container>
   );
