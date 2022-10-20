@@ -1,4 +1,5 @@
 import Weather from "../../assets/WeatherIcons/2.svg";
+import Compass from "../../assets/WeatherIcons/44.svg";
 import {
   ContainerWeatherData,
   Content,
@@ -6,19 +7,27 @@ import {
   ContentDetailsRight,
   TomorrowContainer,
   NextDaysContainer,
+  TitleContainer,
+  ImgTitleContainer,
 } from "./styled";
 export const Middle = () => {
   return (
-    <Content color="#FFEF5C">
-      <div>
-        <p>Previsão do tempo</p>
-        <p>Rio de Janeiro, RJ</p>
-      </div>
-      <ContainerWeatherData>
+    <Content color="#161616">
+      <TitleContainer>
+        <ImgTitleContainer>
+          <img src={Compass} alt="Bússola" />
+        </ImgTitleContainer>
+        <div>
+          <p>Previsão do tempo</p>
+          <p>Rio de Janeiro, RJ</p>
+        </div>
+      </TitleContainer>
+
+      <ContainerWeatherData color="#F0C000" colorHover="#705E00">
         <ContentImgLeft>
           <img src={Weather} alt=""></img>
         </ContentImgLeft>
-        <ContentDetailsRight color="#F5D90A">
+        <ContentDetailsRight>
           <div>
             <p>Hoje</p>
             <p>32º</p>
@@ -34,12 +43,12 @@ export const Middle = () => {
         </ContentDetailsRight>
       </ContainerWeatherData>
 
-      <TomorrowContainer>
+      <TomorrowContainer color="#F0C000" colorHover="#705E00">
         <p>Amanhã</p>
         <p>32º</p>
       </TomorrowContainer>
 
-      <NextDaysContainer>
+      <NextDaysContainer color="#F0C000" colorHover="#705E00">
         <p>Depois de Amanhã</p>
         <p>30º</p>
       </NextDaysContainer>

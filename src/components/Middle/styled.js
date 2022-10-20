@@ -16,12 +16,44 @@ export const Content = styled.div`
   p {
     font-size: 16px;
   }
+  @media (min-width: 600px) {
+    width: 80%;
+  }
+  @media (min-width: 1024px) {
+    width: 60%;
+  }
+`;
+export const TitleContainer = styled.div`
+  background-color: #707070;
+  width: 95%;
+  height: 15%;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
+export const ImgTitleContainer = styled.div`
+  width: 50px;
+  height: 50px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 export const ContainerWeatherData = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
+  transition: 1s;
+  background-color: ${(props) => Color(props.color)};
+  transition: 1s;
+  &:hover {
+    background-color: ${(props) => Color(props.colorHover)};
+  }
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
 `;
 export const ContentImgLeft = styled.div`
   display: flex;
@@ -35,7 +67,16 @@ export const ContentDetailsRight = styled.div`
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  background-color: ${(props) => Color(props.color)};
+
+  @media (min-width: 600px) {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      font-size: 24px;
+    }
+  }
 `;
 
 export const TomorrowContainer = styled.div`
@@ -43,7 +84,12 @@ export const TomorrowContainer = styled.div`
   justify-content: space-between;
   width: 100%;
   flex-direction: column;
+  background-color: ${(props) => Color(props.color)};
   align-items: center;
+  transition: 1s;
+  &:hover {
+    background-color: ${(props) => Color(props.colorHover)};
+  }
 `;
 export const NextDaysContainer = styled.div`
   display: flex;
@@ -51,4 +97,9 @@ export const NextDaysContainer = styled.div`
   width: 100%;
   flex-direction: column;
   align-items: center;
+  background-color: ${(props) => Color(props.color)};
+  transition: 1s;
+  &:hover {
+    background-color: ${(props) => Color(props.colorHover)};
+  }
 `;
